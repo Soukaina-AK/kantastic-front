@@ -33,8 +33,8 @@ export default function Login() {
                     <p className="underline">Forgot password</p>
                 </div>
                 <div className="flex flex-col gap-2 w-full">
-                    <button className="btn btn-primary shadow">SIGN IN</button>
-                    <button className="btn btn-outline">
+                    <button className="btn btn-primary shadow drop-shadow-sm">SIGN IN</button>
+                    <button className="btn btn-outline shadow drop-shadow-sm">
                         <Image
                         src='/google.svg'
                         alt="google image"
