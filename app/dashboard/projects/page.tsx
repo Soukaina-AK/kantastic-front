@@ -1,4 +1,5 @@
 import { FolderClosed } from "lucide-react";
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -18,11 +19,13 @@ export default function Projects() {
 
 export function Card(){
     return(
-        <div className="card card-side shadow drop-shadow-lg bg-white">
+        <div className="card card-side shadow drop-shadow-lg bg-white w-[400px]">
             <figure>
-                <img
+                <Image
                 src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-                alt="Movie" />
+                alt="Movie"
+                width={200}
+                height={100} />
             </figure>
             <div className="card-body">
                 <h2 className="card-title">New movie is released!</h2>
@@ -39,7 +42,7 @@ export function ProjectsType(){
     return(
         <div className="flex flex-col gap-4">
                 <h1 className="text-4xl">Latest Projects</h1>
-                <div className="flex flex-row items-center gap-5">
+                <div className="flex flex-row items-center gap-5 overflow-x-auto">
                     <Card />
                     <Card />
                     <Card />

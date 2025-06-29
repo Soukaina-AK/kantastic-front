@@ -23,24 +23,24 @@ export function SideBar(){
             <div className="flex flex-col items-center gap-16">
                 <div>logo</div>
                 <div className="flex flex-col gap-4">
-                    <div className="flex flex-row gap-2 bg-white rounded-xl md:rounded-lg p-1 lg:pr-14 xl:pr-20 2xl:pr-36">
+                    <button className="flex flex-row gap-2 bg-white rounded-xl md:rounded-lg p-1 lg:pr-14 xl:pr-20 2xl:pr-36">
                         <FolderClosed />
                         <p className="hidden md:flex">PROJECTS</p>
-                    </div>
-                    <div className="flex flex-row gap-2 bg-white rounded-xl md:rounded-lg p-1">
+                    </button>
+                    <button className="flex flex-row gap-2 bg-white rounded-xl md:rounded-lg p-1">
                         <Kanban />
                         <p className="hidden md:flex">KANBAN</p>
-                    </div>
-                    <div className="flex flex-row gap-2 bg-white rounded-xl md:rounded-lg p-1">
+                    </button>
+                    <button className="flex flex-row gap-2 bg-white rounded-xl md:rounded-lg p-1">
                         <User />
                         <p className="hidden md:flex">PROFILE</p>
-                    </div>
+                    </button>
                 </div>
             </div>
-            <div className="flex flex-row gap-2 bg-white rounded-xl md:rounded-lg p-1 lg:pr-14 xl:pr-20 2xl:pr-36">
+            <button className="flex flex-row gap-2 bg-white rounded-xl md:rounded-lg p-1 lg:pr-14 xl:pr-20 2xl:pr-36">
                 <LogOut/>
                 <p className="hidden md:flex">LOGOUT</p>
-            </div>
+            </button>
         </div>
     )
 }
