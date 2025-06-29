@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Login() {
+export default function Register() {
   return (
     <div className="flex flex-row h-screen ">
         <div className="w-full md:w-1/2 flex flex-col items-center justify-center gap-7 px-7 sm:px-28 md:px-8 lg:px-24 xl:px-36 2xl:px-52">
