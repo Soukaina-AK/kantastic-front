@@ -25,7 +25,9 @@ export function Card(){
                 src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
                 alt="Movie"
                 width={200}
-                height={100} />
+                height={100}
+                 className="w-[200px]"
+                />
             </figure>
             <div className="card-body">
                 <h2 className="card-title">New movie is released!</h2>
