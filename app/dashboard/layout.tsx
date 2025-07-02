@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Bell, Menu, FolderClosed, Kanban, LogOut, User } from "lucide-react"
 
-export default function DashboardLayout({
+export default function HomeLayout({
     children,
 }:Readonly <{
     children:React.ReactNode
@@ -19,7 +19,7 @@ export default function DashboardLayout({
 
 export function SideBar(){
     return(
-        <div className="bg-blue-800 flex-1/12 flex flex-col items-center justify-between py-7">
+        <div className="bg-blue-800 flex-1/12 flex flex-col px-2 items-center justify-between py-7">
             <div className="flex flex-col items-center gap-16">
                 <div>logo</div>
                 <div className="flex flex-col gap-4">
@@ -47,19 +47,18 @@ export function SideBar(){
 
 export function NavBar(){
     return(
-        <div className="bg-gray-50 flex flex-row items-center justify-between px-4 py-2">
+        <div className="navbar bg-gray-50 flex flex-row items-center justify-between px-4 py-2">
             <Menu />
             <p>KANTASTIC</p>
             <div className="flex flex-row items-center gap-4">
                 <Bell width={20} height={20} />
                 <div className="flex flex-row items-center gap-2 md:pr-24 md:pl-1 md:py-1 md:shadow md:drop-shadow-lg">
-                    <Image
-                    src={'/profile-pic.webp'}
-                    alt="profile-pic"
-                    width={35}
-                    height={35}
-                    className="rounded-full"
-                    />
+                    <div className="avatar">
+                        <div className="w-8 rounded-full">
+                            <Image width={35} height={35} alt=""src={'/profile-pic.webp'} />
+                        </div>
+                    </div>
+                  
                     <div className="md:flex flex-col hidden">
                         <p className="text-sm">soukaina</p>
                         <p className="text-gray-400 text-sm">Morocco</p>
